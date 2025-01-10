@@ -3395,14 +3395,5 @@
     "soundsystem_dll": {
         "dwSoundSystem": "0x39E5E0",
         "dwSoundSystem_engineViewData": "0x7C"
-    },
-    "Others": {
-        "AnimGraph": "0x151560",
-        "Aspect_Ratio": "0x7fe870",
-        "Fov_Changer": "0x51e8d0",
-        "Fov_Offset": "0x559f30",
-        "LightSceneObject": "0x67bc0",
-        "ScenSystem": "0x30470",
-        "hkDrawSceneObject": "0x55680"
     }
 }
