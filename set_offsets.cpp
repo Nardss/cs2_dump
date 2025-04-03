@@ -145,6 +145,7 @@ C_CSGameRules.m_vMinimapMins = findOffsetByName(j, "C_CSGameRules", "m_vMinimapM
 C_CSGameRules.m_vMinimapMaxs = findOffsetByName(j, "C_CSGameRules", "m_vMinimapMaxs");
 C_CSGameRules.m_MinimapVerticalSectionHeights = findOffsetByName(j, "C_CSGameRules", "m_MinimapVerticalSectionHeights");
 C_CSGameRules.m_bSpawnedTerrorHuntHeavy = findOffsetByName(j, "C_CSGameRules", "m_bSpawnedTerrorHuntHeavy");
+C_CSGameRules.m_ullLocalMatchID = findOffsetByName(j, "C_CSGameRules", "m_ullLocalMatchID");
 C_CSGameRules.m_nEndMatchMapGroupVoteTypes = findOffsetByName(j, "C_CSGameRules", "m_nEndMatchMapGroupVoteTypes");
 C_CSGameRules.m_nEndMatchMapGroupVoteOptions = findOffsetByName(j, "C_CSGameRules", "m_nEndMatchMapGroupVoteOptions");
 C_CSGameRules.m_nEndMatchMapVoteWinner = findOffsetByName(j, "C_CSGameRules", "m_nEndMatchMapVoteWinner");
@@ -2000,10 +2001,6 @@ C_HandleTest.m_bSendHandle = findOffsetByName(j, "C_HandleTest", "m_bSendHandle"
 // C_EnvWindClientside Offsets
 C_EnvWindClientside.m_EnvWindShared = findOffsetByName(j, "C_EnvWindClientside", "m_EnvWindShared");
 
-// Atribuições para C_WeaponShield
-// C_WeaponShield Offsets
-C_WeaponShield.m_flDisplayHealth = findOffsetByName(j, "C_WeaponShield", "m_flDisplayHealth");
-
 // Atribuições para C_PointClientUIWorldTextPanel
 // C_PointClientUIWorldTextPanel Offsets
 C_PointClientUIWorldTextPanel.m_messageText = findOffsetByName(j, "C_PointClientUIWorldTextPanel", "m_messageText");
@@ -2557,11 +2554,6 @@ CCSPlayer_BuyServices.m_vecSellbackPurchaseEntries = findOffsetByName(j, "CCSPla
 // C_WeaponTaser Offsets
 C_WeaponTaser.m_fFireTime = findOffsetByName(j, "C_WeaponTaser", "m_fFireTime");
 C_WeaponTaser.m_nLastAttackTick = findOffsetByName(j, "C_WeaponTaser", "m_nLastAttackTick");
-
-// Atribuições para C_Fists
-// C_Fists Offsets
-C_Fists.m_bPlayingUninterruptableAct = findOffsetByName(j, "C_Fists", "m_bPlayingUninterruptableAct");
-C_Fists.m_nUninterruptableActivity = findOffsetByName(j, "C_Fists", "m_nUninterruptableActivity");
 
 // Atribuições para CInfoDynamicShadowHintBox
 // CInfoDynamicShadowHintBox Offsets
@@ -3279,6 +3271,7 @@ CCSPlayerController.m_unPlayerTvControlFlags = findOffsetByName(j, "CCSPlayerCon
 CCSPlayerController.m_iDraftIndex = findOffsetByName(j, "CCSPlayerController", "m_iDraftIndex");
 CCSPlayerController.m_msQueuedModeDisconnectionTimestamp = findOffsetByName(j, "CCSPlayerController", "m_msQueuedModeDisconnectionTimestamp");
 CCSPlayerController.m_uiAbandonRecordedReason = findOffsetByName(j, "CCSPlayerController", "m_uiAbandonRecordedReason");
+CCSPlayerController.m_eNetworkDisconnectionReason = findOffsetByName(j, "CCSPlayerController", "m_eNetworkDisconnectionReason");
 CCSPlayerController.m_bCannotBeKicked = findOffsetByName(j, "CCSPlayerController", "m_bCannotBeKicked");
 CCSPlayerController.m_bEverFullyConnected = findOffsetByName(j, "CCSPlayerController", "m_bEverFullyConnected");
 CCSPlayerController.m_bAbandonAllowsSurrender = findOffsetByName(j, "CCSPlayerController", "m_bAbandonAllowsSurrender");
@@ -3610,51 +3603,3 @@ C_Chicken.m_bIsPreviewModel = findOffsetByName(j, "C_Chicken", "m_bIsPreviewMode
 // PhysicsRagdollPose_t Offsets
 PhysicsRagdollPose_t.m_Transforms = findOffsetByName(j, "PhysicsRagdollPose_t", "m_Transforms");
 PhysicsRagdollPose_t.m_hOwner = findOffsetByName(j, "PhysicsRagdollPose_t", "m_hOwner");
-
-// Atribuições para client_dll
-// client_dll Offsets
-client_dll.dwCSGOInput = findOffsetByName(j, "client_dll", "dwCSGOInput");
-client_dll.dwEntityList = findOffsetByName(j, "client_dll", "dwEntityList");
-client_dll.dwGameEntitySystem = findOffsetByName(j, "client_dll", "dwGameEntitySystem");
-client_dll.dwGameEntitySystem_highestEntityIndex = findOffsetByName(j, "client_dll", "dwGameEntitySystem_highestEntityIndex");
-client_dll.dwGameRules = findOffsetByName(j, "client_dll", "dwGameRules");
-client_dll.dwGlobalVars = findOffsetByName(j, "client_dll", "dwGlobalVars");
-client_dll.dwGlowManager = findOffsetByName(j, "client_dll", "dwGlowManager");
-client_dll.dwLocalPlayerController = findOffsetByName(j, "client_dll", "dwLocalPlayerController");
-client_dll.dwLocalPlayerPawn = findOffsetByName(j, "client_dll", "dwLocalPlayerPawn");
-client_dll.dwPlantedC4 = findOffsetByName(j, "client_dll", "dwPlantedC4");
-client_dll.dwPrediction = findOffsetByName(j, "client_dll", "dwPrediction");
-client_dll.dwSensitivity = findOffsetByName(j, "client_dll", "dwSensitivity");
-client_dll.dwSensitivity_sensitivity = findOffsetByName(j, "client_dll", "dwSensitivity_sensitivity");
-client_dll.dwViewAngles = findOffsetByName(j, "client_dll", "dwViewAngles");
-client_dll.dwViewMatrix = findOffsetByName(j, "client_dll", "dwViewMatrix");
-client_dll.dwViewRender = findOffsetByName(j, "client_dll", "dwViewRender");
-client_dll.dwWeaponC4 = findOffsetByName(j, "client_dll", "dwWeaponC4");
-
-// Atribuições para engine2_dll
-// engine2_dll Offsets
-engine2_dll.dwBuildNumber = findOffsetByName(j, "engine2_dll", "dwBuildNumber");
-engine2_dll.dwNetworkGameClient = findOffsetByName(j, "engine2_dll", "dwNetworkGameClient");
-engine2_dll.dwNetworkGameClient_clientTickCount = findOffsetByName(j, "engine2_dll", "dwNetworkGameClient_clientTickCount");
-engine2_dll.dwNetworkGameClient_deltaTick = findOffsetByName(j, "engine2_dll", "dwNetworkGameClient_deltaTick");
-engine2_dll.dwNetworkGameClient_isBackgroundMap = findOffsetByName(j, "engine2_dll", "dwNetworkGameClient_isBackgroundMap");
-engine2_dll.dwNetworkGameClient_localPlayer = findOffsetByName(j, "engine2_dll", "dwNetworkGameClient_localPlayer");
-engine2_dll.dwNetworkGameClient_maxClients = findOffsetByName(j, "engine2_dll", "dwNetworkGameClient_maxClients");
-engine2_dll.dwNetworkGameClient_serverTickCount = findOffsetByName(j, "engine2_dll", "dwNetworkGameClient_serverTickCount");
-engine2_dll.dwNetworkGameClient_signOnState = findOffsetByName(j, "engine2_dll", "dwNetworkGameClient_signOnState");
-engine2_dll.dwWindowHeight = findOffsetByName(j, "engine2_dll", "dwWindowHeight");
-engine2_dll.dwWindowWidth = findOffsetByName(j, "engine2_dll", "dwWindowWidth");
-
-// Atribuições para inputsystem_dll
-// inputsystem_dll Offsets
-inputsystem_dll.dwInputSystem = findOffsetByName(j, "inputsystem_dll", "dwInputSystem");
-
-// Atribuições para matchmaking_dll
-// matchmaking_dll Offsets
-matchmaking_dll.dwGameTypes = findOffsetByName(j, "matchmaking_dll", "dwGameTypes");
-matchmaking_dll.dwGameTypes_mapName = findOffsetByName(j, "matchmaking_dll", "dwGameTypes_mapName");
-
-// Atribuições para soundsystem_dll
-// soundsystem_dll Offsets
-soundsystem_dll.dwSoundSystem = findOffsetByName(j, "soundsystem_dll", "dwSoundSystem");
-soundsystem_dll.dwSoundSystem_engineViewData = findOffsetByName(j, "soundsystem_dll", "dwSoundSystem_engineViewData");

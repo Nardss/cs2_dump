@@ -144,6 +144,7 @@ inline struct C_CSGameRulesOffsets {
 	DWORD m_vMinimapMaxs;
 	DWORD m_MinimapVerticalSectionHeights;
 	DWORD m_bSpawnedTerrorHuntHeavy;
+	DWORD m_ullLocalMatchID;
 	DWORD m_nEndMatchMapGroupVoteTypes;
 	DWORD m_nEndMatchMapGroupVoteOptions;
 	DWORD m_nEndMatchMapVoteWinner;
@@ -2000,10 +2001,6 @@ inline struct C_EnvWindClientsideOffsets {
 	DWORD m_EnvWindShared;
 } C_EnvWindClientside;
 
-inline struct C_WeaponShieldOffsets {
-	DWORD m_flDisplayHealth;
-} C_WeaponShield;
-
 inline struct C_PointClientUIWorldTextPanelOffsets {
 	DWORD m_messageText;
 } C_PointClientUIWorldTextPanel;
@@ -2557,11 +2554,6 @@ inline struct C_WeaponTaserOffsets {
 	DWORD m_fFireTime;
 	DWORD m_nLastAttackTick;
 } C_WeaponTaser;
-
-inline struct C_FistsOffsets {
-	DWORD m_bPlayingUninterruptableAct;
-	DWORD m_nUninterruptableActivity;
-} C_Fists;
 
 inline struct CInfoDynamicShadowHintBoxOffsets {
 	DWORD m_vBoxMins;
@@ -3278,6 +3270,7 @@ inline struct CCSPlayerControllerOffsets {
 	DWORD m_iDraftIndex;
 	DWORD m_msQueuedModeDisconnectionTimestamp;
 	DWORD m_uiAbandonRecordedReason;
+	DWORD m_eNetworkDisconnectionReason;
 	DWORD m_bCannotBeKicked;
 	DWORD m_bEverFullyConnected;
 	DWORD m_bAbandonAllowsSurrender;
@@ -3610,52 +3603,4 @@ inline struct PhysicsRagdollPose_tOffsets {
 	DWORD m_Transforms;
 	DWORD m_hOwner;
 } PhysicsRagdollPose_t;
-
-inline struct client_dllOffsets {
-	DWORD dwCSGOInput;
-	DWORD dwEntityList;
-	DWORD dwGameEntitySystem;
-	DWORD dwGameEntitySystem_highestEntityIndex;
-	DWORD dwGameRules;
-	DWORD dwGlobalVars;
-	DWORD dwGlowManager;
-	DWORD dwLocalPlayerController;
-	DWORD dwLocalPlayerPawn;
-	DWORD dwPlantedC4;
-	DWORD dwPrediction;
-	DWORD dwSensitivity;
-	DWORD dwSensitivity_sensitivity;
-	DWORD dwViewAngles;
-	DWORD dwViewMatrix;
-	DWORD dwViewRender;
-	DWORD dwWeaponC4;
-} client_dll;
-
-inline struct engine2_dllOffsets {
-	DWORD dwBuildNumber;
-	DWORD dwNetworkGameClient;
-	DWORD dwNetworkGameClient_clientTickCount;
-	DWORD dwNetworkGameClient_deltaTick;
-	DWORD dwNetworkGameClient_isBackgroundMap;
-	DWORD dwNetworkGameClient_localPlayer;
-	DWORD dwNetworkGameClient_maxClients;
-	DWORD dwNetworkGameClient_serverTickCount;
-	DWORD dwNetworkGameClient_signOnState;
-	DWORD dwWindowHeight;
-	DWORD dwWindowWidth;
-} engine2_dll;
-
-inline struct inputsystem_dllOffsets {
-	DWORD dwInputSystem;
-} inputsystem_dll;
-
-inline struct matchmaking_dllOffsets {
-	DWORD dwGameTypes;
-	DWORD dwGameTypes_mapName;
-} matchmaking_dll;
-
-inline struct soundsystem_dllOffsets {
-	DWORD dwSoundSystem;
-	DWORD dwSoundSystem_engineViewData;
-} soundsystem_dll;
 
