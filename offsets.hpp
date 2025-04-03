@@ -144,6 +144,7 @@ inline struct C_CSGameRulesOffsets {
 	DWORD m_vMinimapMaxs;
 	DWORD m_MinimapVerticalSectionHeights;
 	DWORD m_bSpawnedTerrorHuntHeavy;
+	DWORD m_ullLocalMatchID;
 	DWORD m_nEndMatchMapGroupVoteTypes;
 	DWORD m_nEndMatchMapGroupVoteOptions;
 	DWORD m_nEndMatchMapVoteWinner;
@@ -2000,10 +2001,6 @@ inline struct C_EnvWindClientsideOffsets {
 	DWORD m_EnvWindShared;
 } C_EnvWindClientside;
 
-inline struct C_WeaponShieldOffsets {
-	DWORD m_flDisplayHealth;
-} C_WeaponShield;
-
 inline struct C_PointClientUIWorldTextPanelOffsets {
 	DWORD m_messageText;
 } C_PointClientUIWorldTextPanel;
@@ -2557,11 +2554,6 @@ inline struct C_WeaponTaserOffsets {
 	DWORD m_fFireTime;
 	DWORD m_nLastAttackTick;
 } C_WeaponTaser;
-
-inline struct C_FistsOffsets {
-	DWORD m_bPlayingUninterruptableAct;
-	DWORD m_nUninterruptableActivity;
-} C_Fists;
 
 inline struct CInfoDynamicShadowHintBoxOffsets {
 	DWORD m_vBoxMins;
@@ -3278,6 +3270,7 @@ inline struct CCSPlayerControllerOffsets {
 	DWORD m_iDraftIndex;
 	DWORD m_msQueuedModeDisconnectionTimestamp;
 	DWORD m_uiAbandonRecordedReason;
+	DWORD m_eNetworkDisconnectionReason;
 	DWORD m_bCannotBeKicked;
 	DWORD m_bEverFullyConnected;
 	DWORD m_bAbandonAllowsSurrender;
