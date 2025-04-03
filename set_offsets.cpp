@@ -145,7 +145,6 @@ C_CSGameRules.m_vMinimapMins = findOffsetByName(j, "C_CSGameRules", "m_vMinimapM
 C_CSGameRules.m_vMinimapMaxs = findOffsetByName(j, "C_CSGameRules", "m_vMinimapMaxs");
 C_CSGameRules.m_MinimapVerticalSectionHeights = findOffsetByName(j, "C_CSGameRules", "m_MinimapVerticalSectionHeights");
 C_CSGameRules.m_bSpawnedTerrorHuntHeavy = findOffsetByName(j, "C_CSGameRules", "m_bSpawnedTerrorHuntHeavy");
-C_CSGameRules.m_ullLocalMatchID = findOffsetByName(j, "C_CSGameRules", "m_ullLocalMatchID");
 C_CSGameRules.m_nEndMatchMapGroupVoteTypes = findOffsetByName(j, "C_CSGameRules", "m_nEndMatchMapGroupVoteTypes");
 C_CSGameRules.m_nEndMatchMapGroupVoteOptions = findOffsetByName(j, "C_CSGameRules", "m_nEndMatchMapGroupVoteOptions");
 C_CSGameRules.m_nEndMatchMapVoteWinner = findOffsetByName(j, "C_CSGameRules", "m_nEndMatchMapVoteWinner");
@@ -2001,6 +2000,10 @@ C_HandleTest.m_bSendHandle = findOffsetByName(j, "C_HandleTest", "m_bSendHandle"
 // C_EnvWindClientside Offsets
 C_EnvWindClientside.m_EnvWindShared = findOffsetByName(j, "C_EnvWindClientside", "m_EnvWindShared");
 
+// Atribuições para C_WeaponShield
+// C_WeaponShield Offsets
+C_WeaponShield.m_flDisplayHealth = findOffsetByName(j, "C_WeaponShield", "m_flDisplayHealth");
+
 // Atribuições para C_PointClientUIWorldTextPanel
 // C_PointClientUIWorldTextPanel Offsets
 C_PointClientUIWorldTextPanel.m_messageText = findOffsetByName(j, "C_PointClientUIWorldTextPanel", "m_messageText");
@@ -2554,6 +2557,11 @@ CCSPlayer_BuyServices.m_vecSellbackPurchaseEntries = findOffsetByName(j, "CCSPla
 // C_WeaponTaser Offsets
 C_WeaponTaser.m_fFireTime = findOffsetByName(j, "C_WeaponTaser", "m_fFireTime");
 C_WeaponTaser.m_nLastAttackTick = findOffsetByName(j, "C_WeaponTaser", "m_nLastAttackTick");
+
+// Atribuições para C_Fists
+// C_Fists Offsets
+C_Fists.m_bPlayingUninterruptableAct = findOffsetByName(j, "C_Fists", "m_bPlayingUninterruptableAct");
+C_Fists.m_nUninterruptableActivity = findOffsetByName(j, "C_Fists", "m_nUninterruptableActivity");
 
 // Atribuições para CInfoDynamicShadowHintBox
 // CInfoDynamicShadowHintBox Offsets
@@ -3271,7 +3279,6 @@ CCSPlayerController.m_unPlayerTvControlFlags = findOffsetByName(j, "CCSPlayerCon
 CCSPlayerController.m_iDraftIndex = findOffsetByName(j, "CCSPlayerController", "m_iDraftIndex");
 CCSPlayerController.m_msQueuedModeDisconnectionTimestamp = findOffsetByName(j, "CCSPlayerController", "m_msQueuedModeDisconnectionTimestamp");
 CCSPlayerController.m_uiAbandonRecordedReason = findOffsetByName(j, "CCSPlayerController", "m_uiAbandonRecordedReason");
-CCSPlayerController.m_eNetworkDisconnectionReason = findOffsetByName(j, "CCSPlayerController", "m_eNetworkDisconnectionReason");
 CCSPlayerController.m_bCannotBeKicked = findOffsetByName(j, "CCSPlayerController", "m_bCannotBeKicked");
 CCSPlayerController.m_bEverFullyConnected = findOffsetByName(j, "CCSPlayerController", "m_bEverFullyConnected");
 CCSPlayerController.m_bAbandonAllowsSurrender = findOffsetByName(j, "CCSPlayerController", "m_bAbandonAllowsSurrender");
